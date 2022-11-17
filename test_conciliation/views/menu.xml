@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+<!--        Master   -->
+        <record id="action_master" model="ir.actions.act_window">
+            <field name="name">Master</field>
+            <field name="res_model">master_x</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+<!--        Complemento   -->
+        <record id="action_complemento" model="ir.actions.act_window">
+            <field name="name">Complemento</field>
+            <field name="res_model">complemento</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="prueba_xepelin" name="Prueba Xepelin" sequence="10"/>
+<!--Master-->
+        <menuitem id="minimum_master_menu" name="Master" parent="prueba_xepelin"
+                  action="action_master" sequence="1"/>
+
+<!--Complemento-->
+        <menuitem id="minimum_complemento_menu" name="Complemento" parent="prueba_xepelin"
+                  action="action_complemento" sequence="1"/>
+
+	</data>
+</odoo>

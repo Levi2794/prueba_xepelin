@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--        Complemento   -->
+        <record id="complemento_tree_view" model="ir.ui.view">
+            <field name="name">Complemento</field>
+            <field name="model">complemento</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" invisible="1"/>
+                    <field name="concept"/>
+                    <field name="type"/>
+                    <field name="account"/>
+                    <field name="tax_information"/>
+                    <field name="date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="complemento_form_view" model="ir.ui.view">
+            <field name="name">Complemento</field>
+            <field name="model">complemento</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" invisible="1"/>
+                                <field name="concept"/>
+                                <field name="type"/>
+                                <field name="account"/>
+                            </group>
+                            <group>
+                                <field name="tax_information"/>
+                                <field name="date"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
