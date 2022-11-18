@@ -26,6 +26,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/menu.xml',
+        'wizard/import_excel_view.xml',
         'views/master_views.xml',
         'views/complemento_views.xml',
     ],

@@ -17,12 +17,18 @@
         </record>
 
         <menuitem id="prueba_xepelin" name="Prueba Xepelin" sequence="10"/>
+
+        <menuitem id="master_menu" name="Master"
+                  parent="prueba_xepelin" sequence="10"/>
+
+        <menuitem id="complemento_menu" name="Complemento"
+                  parent="prueba_xepelin" sequence="10"/>
 <!--Master-->
-        <menuitem id="minimum_master_menu" name="Master" parent="prueba_xepelin"
+        <menuitem id="minimum_master_menu" name="Master" parent="master_menu"
                   action="action_master" sequence="1"/>
 
 <!--Complemento-->
-        <menuitem id="minimum_complemento_menu" name="Complemento" parent="prueba_xepelin"
+        <menuitem id="minimum_complemento_menu" name="Complemento" parent="complemento_menu"
                   action="action_complemento" sequence="1"/>
 
 	</data>
