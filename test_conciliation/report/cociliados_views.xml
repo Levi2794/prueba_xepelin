@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--        Conciliados   -->
+        <record id="conciliados_tree_view" model="ir.ui.view">
+            <field name="name">Conciliados</field>
+            <field name="model">conciliados.view</field>
+            <field name="arch" type="xml">
+                <tree create="false" delete="false" edit="false">
+                    <field name="concept"/>
+                    <field name="type"/>
+                    <field name="account"/>
+                    <field name="tax_information"/>
+                    <field name="date"/>
+                    <field name="bank_id"/>
+                    <field name="country_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="conciliados_form_view" model="ir.ui.view">
+            <field name="name">Conciliados</field>
+            <field name="model">conciliados.view</field>
+            <field name="arch" type="xml">
+                <form create="false" delete="false" edit="false">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="concept"/>
+                                <field name="type"/>
+                                <field name="account"/>
+                            </group>
+                            <group>
+                                <field name="tax_information"/>
+                                <field name="date"/>
+                                <field name="bank_id"/>
+                                <field name="country_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_conciliados" model="ir.actions.act_window">
+            <field name="name">Conciliados</field>
+            <field name="res_model">conciliados.view</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_conciliados"
+                  name="Conciliados"
+                  parent="test_conciliation.prueba_xepelin"
+                  sequence="10"
+                  action="action_conciliados"/>
+
+    </data>
+</odoo>

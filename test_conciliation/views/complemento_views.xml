@@ -7,7 +7,6 @@
             <field name="model">complemento</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="name" invisible="1"/>
                     <field name="concept"/>
                     <field name="type"/>
                     <field name="account"/>
@@ -25,7 +24,6 @@
                     <sheet>
                         <group>
                             <group>
-                                <field name="name" invisible="1"/>
                                 <field name="concept"/>
                                 <field name="type"/>
                                 <field name="account"/>

@@ -52,10 +52,11 @@ class wizardExcel(models.TransientModel):
 
 
             if 'complemento' in self.filename:
+                print(datos)
                 for datos_n in datos:
                     #Validación de campos en balanco
                     for d in datos_n:
-                        if 'nan' in str(d):
+                        if 'nan' == str(d):
                             raise UserError(_('El archivo contiene catos en blanco'))
 
                     #Busqueda para validar registros existentes
@@ -74,7 +75,7 @@ class wizardExcel(models.TransientModel):
                 for datos_n in datos:
                     #Validación de campos en balanco
                     for d in datos_n:
-                        if 'nan' in str(d):
+                        if 'nan' == str(d):
                             raise UserError(_('El archivo contiene catos en blanco'))
 
                     #Busqueda para validar registros existentes

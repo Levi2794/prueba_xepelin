@@ -6,6 +6,7 @@ from odoo import api, fields, models, tools, _
 class masterModel(models.Model):
     _name = 'master_x'
     _description = 'master'
+    _rec_name = 'bank_id'
 
     name = fields.Char()
     date = fields.Date(string='Fecha', default=fields.Datetime.now)

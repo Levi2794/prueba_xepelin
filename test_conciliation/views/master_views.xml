@@ -7,7 +7,6 @@
             <field name="model">master_x</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="name" invisible="1"/>
                     <field name="date"/>
                     <field name="tax_information"/>
                     <field name="amount"/>
@@ -25,7 +24,6 @@
                     <sheet>
                         <group>
                             <group>
-                                <field name="name" invisible="1"/>
                                 <field name="date"/>
                                 <field name="tax_information"/>
                                 <field name="amount"/>

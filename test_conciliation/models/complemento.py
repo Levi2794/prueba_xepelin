@@ -12,7 +12,6 @@ class complementoModel(models.Model):
     date = fields.Date(string='Fecha', default=fields.Datetime.now)
     tax_information = fields.Char(string='RFC')
     account = fields.Char(string='Cuenta')
-    currency_id = fields.Many2one('res.currency', string='Journal Currency')
     type = fields.Char(string='Tipo')
     concept = fields.Selection(string='Concepto', selection=[('Pago de Prestamo', 'Pago de Prestamo'),
                                                              ('Operación 4567', 'Operación 4567'),

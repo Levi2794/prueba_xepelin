@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_master_x,master_x,model_master_x,base.group_user,1,1,1,1
 access_complemento,complemento,model_complemento,base.group_user,1,1,1,1
 access_wizard_import_excel,wizard.import.excel,model_wizard_import_excel,base.group_user,1,1,1,1
+access_conciliados_view,conciliados.view,model_conciliados_view,base.group_user,1,1,1,1

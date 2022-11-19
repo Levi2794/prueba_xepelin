@@ -29,6 +29,7 @@
         'wizard/import_excel_view.xml',
         'views/master_views.xml',
         'views/complemento_views.xml',
+        'report/cociliados_views.xml',
     ],
     'application': True,
     'installable': True,
