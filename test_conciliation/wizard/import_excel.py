@@ -52,7 +52,6 @@ class wizardExcel(models.TransientModel):
 
 
             if 'complemento' in self.filename:
-                print(datos)
                 for datos_n in datos:
                     #Validación de campos en balanco
                     for d in datos_n:
